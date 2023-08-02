@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+  height: 6.5rem;
+  color: #495057;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #164e63;
+}
+.logo {
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+.name {
+  position: absolute;
+  top: 3rem;
+  left: 12.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.lists {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1f3f5;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.link:hover {
+  color: #228be6;
+}
+.contact {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1f3f5;
+  background-color: #228be6;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+/* sticky header */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  z-index: 99;
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+.navbar > .active {
+  border-bottom: 1px solid #333;
+}
+/*  MQ=>850 */
+/* mobile-nav */
+.mobileNav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.mobile {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+.mobile [name="close"] {
+  display: none;
+}
+@media (max-width: 53.5em) {
+  .lists {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #1098ad;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 3.6rem;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .NavOpen {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .link:hover {
+    background-color: #228be6;
+    color: #eee;
+  }
+  .mobileNav {
+    display: block;
+    z-index: 10000;
+  }
+  .link {
+    display: block;
+
+    font-size: 1.5rem;
+
+    color: #fff;
+  }
+}

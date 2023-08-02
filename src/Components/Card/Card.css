@@ -1,0 +1,81 @@
+.card {
+  perspective: 100rem;
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+}
+.cardside {
+  height: 30rem;
+  width: 20rem;
+
+  transition: all 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.frontSide {
+  background-color: #fff;
+}
+.backside {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  transform: rotateY(180deg);
+}
+.card.flipped .frontSide {
+  transform: rotateY(-180deg);
+}
+.card.flipped .backside {
+  transform: rotateY(0);
+}
+.bgImg {
+  /* background-image: url("../../../assets//project/project-1.jpg"); */
+  background-size: cover;
+  height: 15rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #eee;
+  position: absolute;
+  top: 6.6rem;
+  right: 0.6rem;
+  text-align: right;
+  width: 75%;
+}
+.headingSpan {
+  /* padding: 0.5rem 0.8rem; */
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.822),
+    rgba(85, 67, 250, 0.829)
+  );
+  margin: 0;
+}
+.details ul {
+  list-style: none;
+  width: 80%;
+  padding: 2rem;
+}
+ul li {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}

@@ -1,0 +1,149 @@
+.header {
+  height: 95vh;
+  background-image: url("../../../assets/bg/vintage-grunge-blue-marble-background.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.headingPrimary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+.cta {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.name {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 2.5rem;
+  animation-name: moveToLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation-name: moveToRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.demo {
+  font-size: 1.6rem;
+  color: #f3f3f3;
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+.textBox {
+  margin-bottom: 3.2rem;
+}
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/* meddai query */
+@media (max-width: 84em) {
+  .name {
+    font-size: 5rem;
+  }
+  .cta {
+    top: 47%;
+    left: 50%;
+  }
+}
+/* meddai query=1220px */
+@media (max-width: 76.5em) {
+  .name {
+    letter-spacing: 1.5rem;
+  }
+}
+/* meddai query=1000px */
+@media (max-width: 62.5em) {
+  .name {
+    font-size: 4rem;
+    /* letter-spacing: 1.5rem; */
+  }
+}
+/* meddai query=870px */
+@media (max-width: 54.5em) {
+  .name {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+  }
+}
+/* meddai query=750px */
+@media (max-width: 47.5em) {
+  .name {
+    font-size: 3.2rem;
+    letter-spacing: 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+  }
+}
+/* meddai query=665px */
+@media (max-width: 41.5em) {
+  .name {
+    font-size: 2.8rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+}
+/* meddai query=525px */
+@media (max-width: 32.5em) {
+  .name {
+    font-size: 2.4rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+}

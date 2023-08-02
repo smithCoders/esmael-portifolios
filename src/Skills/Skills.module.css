@@ -1,0 +1,36 @@
+.skillHeader {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.8rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.6rem;
+}
+.icon {
+  width: 6rem;
+  height: 6rem;
+}
+@media (max-width: 44em) {
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 31em) {
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

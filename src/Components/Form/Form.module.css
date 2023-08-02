@@ -1,0 +1,124 @@
+.section {
+  padding: 9.6rem 0 0 0;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.822),
+    rgba(85, 67, 250, 0.829)
+  );
+  overflow: hidden;
+}
+.ctaText {
+  color: #45260a;
+  padding: 4.8rem 6.4rem;
+}
+.hello {
+  color: inherit;
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+  text-transform: capitalize;
+}
+.text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.ctaImg {
+  background-image: url("../../../assets/undraw_programming_re_kg9v.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+label {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.input {
+  width: 100%;
+  padding: 1.4rem 2.4rem;
+  color: inherit;
+  font-size: 16px;
+  border: none;
+  background-color: aliceblue;
+  outline: none;
+  border: 3px solid #228be6;
+  border-radius: 5px;
+}
+.textarea {
+  width: 100%;
+  color: inherit;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: 2px solid #228be6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+.btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+/* MD-1000 */
+@media (max-width: 63em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* MD-850 */
+@media (max-width: 54em) {
+  .ctaImg {
+    display: none;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .textarea {
+    width: 80%;
+    /* height: 10rem; */
+  }
+}
+/* MD-7000 */
+@media (max-width: 54em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .textarea {
+    width: 100%;
+    /* height: 10rem; */
+  }
+}
+
+/* MD-7000 */
+@media (max-width: 54em) {
+  .hello {
+    font-size: 3.6rem;
+  }
+}
+/* * MD-7000 */
+@media (max-width: 54em) {
+  .hello {
+    font-size: 3rem;
+  }
+}
+/* MD-7000 */
+@media (max-width: 28.5em) {
+  .hello {
+    font-size: 2.4rem;
+  }
+}
