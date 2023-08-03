@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import { NavLink } from "react-router-dom";
+
 import DownloadCv from "../DownloadCv";
 const Hero = () => {
   return (

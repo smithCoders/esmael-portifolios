@@ -11,6 +11,9 @@
   position: relative;
   animation: moveButton 0.5s ease-in-out 1s;
   animation-fill-mode: backwards;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 .contact-link:hover {
   transform: translateY(-3px);

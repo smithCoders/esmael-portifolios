@@ -7,20 +7,19 @@ import {
   FaLinux,
   FaNode,
   FaNpm,
-  FaGraduationCap,
   FaJava,
   FaGithub,
   FaSass,
+  FaBootstrap,
 } from "react-icons/fa6";
+
 const Skills = () => {
   return (
     <section className="global-section " id="skills">
       <div className=" containers  ">
-        <h2 className="subheading ">Education and Skills</h2>
+        <h2 className="subheading "> My skills and Tools</h2>
       </div>
-      <div className={styles.skills}>
-        <h3 className={styles.skillHeader}> 1. My skills and Tools</h3>
-      </div>
+
       <div className={`${styles.grid} containers`}>
         <div>
           {" "}
@@ -37,6 +36,9 @@ const Skills = () => {
         </div>
         <div>
           <FaReact className={styles.icon} />
+        </div>
+        <div>
+          <FaBootstrap className={styles.icon} />
         </div>
         <div>
           <FaNode className={styles.icon} />

@@ -4,7 +4,7 @@ import Hero from "../src/Components/Hero/Hero";
 import Projects from "./Components/Projects/Projects";
 import PageNotFound from "./Components/PageNotFound";
 import Form from "./Components/Form/Form";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 import Love from "./Components//Ilove/Love";
 // import Contact from "./Components/Hero/Contacts/Contact";
 import NavBar from "./Components/NavBar/NavBar";
@@ -24,6 +24,7 @@ function App() {
       {/* <Testimonials /> */}
       <Form />
       <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

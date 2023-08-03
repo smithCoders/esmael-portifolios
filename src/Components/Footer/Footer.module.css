@@ -1,0 +1,65 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 1.6rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.grid a:link,
+a:active {
+  font-size: 1.8rem;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #164e63;
+}
+footer {
+  display: block;
+  background-color: aliceblue;
+  padding: 4.6rem 0;
+  color: #333;
+}
+.info {
+  display: flex;
+  align-items: center;
+  margin-left: 50rem;
+  gap: 3rem;
+  margin-bottom: 3.6rem;
+}
+.icon {
+  font-size: 2rem;
+}
+.demo {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.copy {
+  font-size: 1.5rem;
+  margin-left: 50rem;
+}
+/* MQ */
+@media (max-width: 62.5em) {
+  .info {
+    margin-left: 25rem;
+  }
+  .copy {
+    margin-left: 25rem;
+  }
+}
+@media (max-width: 45.5em) {
+  .info {
+    margin-left: 10rem;
+  }
+  .copy {
+    margin-left: 12rem;
+  }
+}

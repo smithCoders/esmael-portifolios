@@ -2,7 +2,7 @@ import styles from "./love.module.css";
 import { FaCode, FaJsSquare, FaEdit } from "react-icons/fa";
 const love = () => {
   return (
-    <div className={`global-section ${styles.sectionLove}`}>
+    <div className={`global-section ${styles.sectionLove}`} id="love">
       <div className="containers ">
         <h2 className={"headerSecondary subheading"}>things i love</h2>
       </div>

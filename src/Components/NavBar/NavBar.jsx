@@ -1,5 +1,5 @@
 import { IoMdClose } from "react-icons/io";
-import { AiOutlineMenu } from "react-icons/ai";
+
 import { VscListSelection } from "react-icons/vsc";
 import styles from "./NavBar.module.css";
 import { useEffect, useState } from "react";
